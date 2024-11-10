@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    min-height: 50vh;
+    margin: 100px;
+    width: 80%;
+    background: url(https://images.unsplash.com/photo-1526234362653-3b75a0c07438?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlc3RhdXJhbnQlMjBkYXJrJTIwaW50ZXJpb3J8ZW58MHx8MHx8fDA%3D://plus.unsplash.com/premium_photo-1686090448301-4c453ee74718?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudCUyMGludGVyaW9yfGVufDB8fDB8fHww);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
+}
+.cotainer{
+    width: 70%;
+    background: #545451;
+    border-radius: 6px;
+    padding: 20px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgbs(0,0,0,0.2);
+    border-style:dotted;
+    border-radius: 2%;
+}
+.cotainer .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cotainer .content .left-side{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+ .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+.content .left-side .details i{
+    font-size: 30px;
+    color: #eca820;
+    margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+    font-size: 14px;
+    color:#afafb6 ;
+}
+.cotainer .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+.content .right-side .topic-text{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: #eaab37;
+}
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right-side  .input-box input,
+.right-side  .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background:#F0F1F8 ;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+.right-side .message-box{
+    min-height: 110px;
+}
+.button a{
+    background: #f1bf0a;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size:14px ;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.button a:hover{
+    /* background-color: #000; */
+    letter-spacing:1px;
+    transition:0.5s;
+}
